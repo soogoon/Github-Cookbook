@@ -1,5 +1,5 @@
 # Github Cookbook 🍽 <img src="https://github.githubassets.com/images/modules/logos_page/Octocat.png" width="200" align=right>
-개발자들은 물론, 비 개발자 직군에서도 점차 Github을 활용하는 요즘, 개발자로서 아직 다뤄보지 못한 Github의 기능들을 배워보기 위한 스터디입니다.
+개발자로서 아직 다뤄보지 못한 Github의 기능들을 배워보기 위한 스터디입니다.
 
 ## Goal 🌟
 
