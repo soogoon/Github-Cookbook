@@ -40,7 +40,6 @@
 - [soogoon](https://github.com/soogoon)
 - [ttub-ni](https://github.com/ttub-ni)
 - [5aaniversary](https://github.com/5aaniversary)
-- [You-hyeonyeong](https://github.com/You-hyeonyeong)
 - [jihye0420](https://github.com/jihye0420)
 - [siyeons](https://github.com/siyeons)
 - [dongminyoon](https://github.com/dongminyoon)
