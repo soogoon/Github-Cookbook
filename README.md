@@ -28,7 +28,7 @@
 
 > | Chapter | Subject                 | Presenter      |
 > | ------- | ----------------------- | -------------- |
-> | 1       |       미정               |                |
+> | 1       |       [Git Workflow](Git-Github-Collaborating.md)       | [soogoon](https://github.com/soogoon) |
 > | 2       |                         |                |
 > | 3       |                         |                |
 > | 4       |                         |                |
