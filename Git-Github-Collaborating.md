@@ -126,7 +126,7 @@ $ git pull origin new-feature
 - 빈센트 드리센(Vincent Drissen)이 고안한 [Gitflow](https://nvie.com/posts/a-successful-git-branching-model) Workflow는 더 큰 프로젝트를 관리하기 위해 설계되었다.
 - 프로젝트 릴리스(release)를 중심으로 설계된 엄격한 브랜치 모델을 정의하고 있다.
 - Gitflow는 릴리즈 사이클이 예정된 프로젝트에 이상적으로 적합하다.
-- Gitflow Workflow도 [Feature Branch Workflow](#Feature Branch Workflow)와 같이 팀 구성원 간의 협업을 위해 중앙 원격 저장소를 사용한다. 즉, 로컬 브랜치에서 작업하고 중앙 원격 저장소에 푸시한다.
+- Gitflow Workflow도 [Feature Branch Workflow](#feature-branch-workflow)와 같이 팀 구성원 간의 협업을 위해 중앙 원격 저장소를 사용한다. 즉, 로컬 브랜치에서 작업하고 중앙 원격 저장소에 푸시한다.
 
 ### git-flow 설치하기
 
