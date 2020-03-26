@@ -23,7 +23,7 @@ Git 그 자체를 놓고 보면, 유연성에 초첨이 맞춰져 있다. 따라
 
 ### 원격(remote) 저장소와, 로컬(local) 저장소
 
-우선 Feature Branch Workflow는 중앙 원격 저장소(remote) 레포지토리(Repository)를 기준으로 한다.
+우선 Feature Branch Workflow는 중앙 원격(remote) 저장소(repository)를 기준으로 한다.
 
 중앙 원격 저장소를 기준으로 각자의 로컬(local) 저장소에 클론을 하여 작업을 수행한다.
 
@@ -123,12 +123,219 @@ $ git pull origin new-feature
 
 
 
-
-
-
 # Gitflow Workflow
 
+- 빈센트 드리센(Vincent Drissen)이 고안한 [Gitflow](https://nvie.com/posts/a-successful-git-branching-model) Workflow는 더 큰 프로젝트를 관리하기 위해 설계되었다.
+- 프로젝트 릴리스(release)를 중심으로 설계된 엄격한 브랜치 모델을 정의하고 있다.
+- Gitflow는 릴리즈 사이클이 예정된 프로젝트에 이상적으로 적합하다.
+- Gitflow Workflow도 [Feature Branch Workflow](#Feature Branch Workflow)와 같이 팀 구성원 간의 협업을 위해 중앙 원격 저장소를 사용한다. 즉, 로컬 브랜치에서 작업하고 중앙 원격 저장소에 푸시한다.
 
+### git-flow 설치하기
+
+Gitflow는 Git Workflow에 대한 추상적인 아이디어일 뿐이다. 이 개념을 툴로 만든 git의 확장 패키지인 git-flow가 있다. 
+
+만약 macOS 환경이라면 `brew install git-flow` 을 통해 설치가 가능하다.(homebrew 사용 가정)
+
+git-flow를 설치한 후에는 `git flow init`를 실행하여 프로젝트에서 사용할 수 있다. 이 명령은 `git init` 을 포함한 확장된 명령이고, 저장소에서 사용자를 위한 브랜치를 자동으로 생성해주는 것 외에는 다른 점은 없다.
+
+
+
+### Master와 Develop 브랜치
+
+Gitflow는 단일 마스터 브랜치 대신에 두 개의 브랜치를 사용한다.
+
+- 마스터(master) 브랜치는 공식 릴리즈 이력을 저장한다. 즉, 실제 출시한 소프트웨어의 한 버전(version)을 의미한다.
+- 개발(develop) 브랜치는 기능들의 통합 브랜치 역할을 한다. 이 브랜치를 기반으로 모든 구현이 이루어진다.
+
+첫번째 단계는 마스터 브랜치로 부터 개발 브랜치를 생성하고 원격 저장소에 푸시하는 것에서 시작된다.
+
+```bash
+$ git branch develop
+$ git push -u origin develop
+```
+
+다른 개발자들은 이제 중앙 저장소를 클론하여 로컬 저장소를 만들고 모든 브랜치를 체크아웃한다.
+
+바로 직전에 우리는 `git-flow`에 대해 소개하였다. 방금 진행한 일련의 과정을 `git-flow` 가 도와준다.
+
+```bash
+$ git flow ini
+No branches exist yet. Base branches must be created now.
+Branch name for production releases: [master] 
+Branch name for "next release" development: [develop] 
+
+How to name your supporting branch prefixes?
+Feature branches? [feature/] 
+Release branches? [release/] 
+Hotfix branches? [hotfix/] 
+Support branches? [support/] 
+Version tag prefix? [] 
+$ git branch
+* develop
+ master
+```
+
+
+
+### Feature 브랜치
+
+기능(Feature) 브랜치는 [Feature Branch Workflow](#Feature Branch Workflow) 와 마찬가지로 실질적인 기능 구현이 이루어진다.
+
+가장 최신의 개발 브랜치로부터 생성되며 마스터 브랜치와는 절대로 상호작용해서는 안된다.
+
+<img src="https://wac-cdn.atlassian.com/dam/jcr:b5259cce-6245-49f2-b89b-9871f9ee3fa4/03%20(2).svg?cdnVersion=913" alt="feature-branch" style="zoom:25%;" />
+
+- `git-flow` 없이 생성
+
+  ```bash
+  $ git checkout develop
+  $ git checkout -b feature_branch
+  ```
+
+- `git-flow` 를 이용하여 생성
+
+  ```bash
+  $ git flow feature start feature_branch
+  ```
+
+기능 구현이 완료되면 개발 브랜치로 병합한다.
+
+- `git-flow` 없이 병합
+
+  ```bash
+  $ git checkout develop
+  $ git merge feature_branch
+  ```
+
+- `git-flow` 를 이용하여 병합
+
+  ```bash
+  $ git flow feature finish feature_branch
+  ```
+
+만약, 구현이 완료된 기능 브랜치를 풀 리퀘스트를 통해 개발 브랜치에 병합하고 싶다면  [Feature Branch Workflow](#Feature Branch Workflow) 와 같은 방식으로 하면 된다.
+
+### Release Branch
+
+개발이 실제 출시를 위한 충분한 기능 구현이 완료되었다면, 개발 브랜치로 부터 릴리즈(release) 브랜치를 생성한다.
+
+릴리즈 브랜치에서는 버그 수정, 문서 생성 및 기타 릴리즈 준비를 위한 작업들을 수행한다.
+
+릴리즈(실제 소프트웨어의 출시)가 완료 되었다면,
+
+- 릴리즈 브랜치는 마스터 브랜치로 병합되고 버전 번호를 태그로 부여한다.
+
+- 또한, 개발 브랜치에도 병합이 이루어 진다.
+
+![release](https://wac-cdn.atlassian.com/dam/jcr:a9cea7b7-23c3-41a7-a4e0-affa053d9ea7/04%20(1).svg?cdnVersion=913)
+
+릴리즈 브랜치를 사용하면 한 팀이 현재 릴리즈 브랜치를 수정할 수 있고, 다른 팀은 다음 릴리즈의 기능을 계속 개발할 수 있다.
+
+
+
+릴리즈 브랜치를 생성하는 작업은 간단하다. 기능 브랜치와 마찬가지로 개발 브랜치로 부터 생성하면 된다.
+
+- `git-flow` 없이 생성
+
+  ```bash
+  $ git checkout develop
+  $ git checkout -b release/0.1.0
+  ```
+
+- `git-flow` 를 이용하여 생성
+
+  ```bash
+  $ git flow release start 0.1.0
+  새로 만든 'release/0.1.0' 브랜치로 전환합니다
+  
+  Summary of actions:
+  - A new branch 'release/0.1.0' was created, based on 'develop'
+  - You are now on branch 'release/0.1.0'
+  
+  Follow-up actions:
+  - Bump the version number now!
+  - Start committing last-minute fixes in preparing your release
+  - When done, run:
+  
+       git flow release finish '0.1.0'
+  ```
+
+릴리즈가 완료 되었다면, 마스터와 개발 브랜치로 병합하고 해당 릴리즈 브랜치는 삭제된다.
+
+릴리즈 과정에서 새롭게 수정된 사항들이 새로운 기능 구현에 필요할 수 있기때문에 다시 개발 브랜치로 병합되는 것은 중요하다.
+
+만약, 우리의 팀이 코드 리뷰를 강조하고 있다면, 이 과정에서 풀 리퀘스트를 사용할 수 있다.
+
+- `git-flow` 없이 릴리즈 완료
+
+  ```bash
+  $ git checkout master
+  $ git merge release/0.1.0
+  ```
+
+- `git-flow` 를 이용하여 릴리즈 완료
+
+  ```bash
+  $ git flow release finish '0.1.0'
+  ```
+
+### Hotfix Branches
+
+핫픽스(hotfix) 브랜치는 현재 릴리즈 완료되어있는 소프트웨어에서 결함이 발견되었을 시, 신속한 대응을 하기 위해 사용된다.
+
+Gitflow 워크플로우에서 유일하게 마스터 브랜치를 기반으로 생성되는 브랜치이다.
+
+결함 수정이 완료되었다면 즉시 개발, 마스터 브랜치로 병합되어야 하고, 마스터 브랜치는 새로운 버전 번호가 태그된다.
+
+핫픽스 브랜치 라인을 갖추고 있는 소프트웨어는 나머지 워크플로우를 중단하거나 다음 릴리즈를 기다리지 않고 빠르게 결함을 수정할 수 있다.
+
+![hotfix](https://wac-cdn.atlassian.com/dam/jcr:61ccc620-5249-4338-be66-94d563f2843c/05%20(2).svg?cdnVersion=913)
+
+- `git-flow` 없이 생성
+
+  ```bash
+  $ git checkout master
+  $ git checkout -b hotfix_branch
+  ```
+
+- `git-flow` 를 이용하여 생성
+
+  ```bash
+  $ git flow hotfix start hotfix_branch
+  ```
+
+릴리즈 브랜치와 마찬가지로, 핫픽스가 완료되고 나면 개발, 마스터 브랜치에 병합된다.
+
+- `git-flow` 없이 핫픽스 완료
+
+  ```bash
+  $ git checkout master
+  $ git merge hotfix_branch
+  $ git checkout develop
+  $ git merge hotfix_branch
+  $ git branch -D hotfix_branch
+  ```
+
+- `git-flow` 를 이용하여 릴리즈 완료
+
+  ```bash
+  $ git flow hotfix finish hotfix_branch
+  ```
+
+### 요약
+
+Gitflow의 전체 흐름을 요약하면 다음과 같다.
+
+1. **마스터(master) 브랜치**로 부터 **개발(develop) 브랜치가 생성**된다.
+
+2. **개발 브랜치**로 부터 **릴리즈(release) 브랜치가 생성**된다.
+3. **개발 브랜치**로 부터 **기능(feature) 브랜치가 생성**된다.
+4. **기능 구현이 완료**되면 **개발 브랜치로 병합**된다.
+
+5. **릴리즈가 완료**되면 **개발, 마스터 브랜치로 병합**된다.
+6. 만약 **마스터에서 결함이 발견**되면, 마스터 브랜치로 부터 **핫픽스(hotfix) 브랜치가 생성**된다.
+
+7. **핫픽스가 완료**되면 **개발, 마스터 브랜치로 병합**된다.
 
 
 
