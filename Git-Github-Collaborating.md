@@ -1,20 +1,18 @@
 # Git의 다양한 협업 워크플로우
 
-Git 그 자체를 놓고 보면, 유연성에 초첨이 맞춰져 있다. 따라서, Git을 어떻게 사용하는지에 대해서는 표준화 된 것이 없다.
+**Git 그 자체**를 놓고 보면, **유연성**에 초첨이 맞춰져 있다. 따라서, Git을 어떻게 사용하는지에 대해서는 **표준화 된 것이 없다**.
 
-그래서 우리는 Git 으로 협업을 할 때, 일관되고 생산적인 방식으로 작업을 하기 위하여 몇가지 권장되는 워크플로우 방식을 따를 수 있다.
+그래서 우리는 **Git 으로 협업을 할 때**, **일관되고 생산적인 방식**으로 작업을 하기 위하여 몇가지 **권장되는 워크플로우 방식**을 따를 수 있다.
 
-이러한 워크플로우는 구체적인 규칙보다는 지침 정도로만 설계되어 있고, 우리는 프로젝트의 다양한 측면에서 필요에 맞게 선택할 수 있다.
-
-
+이러한 워크플로우는 **구체적인 규칙보다는 지침 정도로만 설계**되어 있고, 우리는 프로젝트의 **다양한 측면에서 필요에 맞게 선택**할 수 있다.
 
 
 
 # Feature Branch Workflow
 
-- Feature Branch Workflow의 핵심 아이디어는 모든 기능 구현을 전용 브랜치에서 작업하는 것이다. 
-- 다수의 팀 구성원이 메인 코드 베이스(master)를 중심으로 해서 안전하게 새로운 기능을 개발할 수 있다.
-- Feature Branch Workflow와 풀 리퀘스트(Pull Request)를 결합하면 팀 구성원간에 변경 내용에 대한 소통을 촉진해서 코드 품질을 높일 수 있다.
+- Feature Branch Workflow의 핵심 아이디어는 **모든 기능 구현을 기능(feature) 브랜치에서 작업**하는 것이다. 
+- **다수의 팀 구성원**이 **메인 코드 베이스(master)를 중심**으로 해서 안전하게 **새로운 기능을 개발**할 수 있다.
+- Feature Branch Workflow와 풀 리퀘스트(Pull Request)를 결합하면 팀 구성원 간에 변경 내용에 대한 소통을 촉진해서 코드 품질을 높일 수 있다.
 
 - 소규모 인원의 프로젝트에서 사용하는 워크플로우이다.
 - 여러 워크플로우들이 Feature Branch Workflow를 기본 모델로 한다.
@@ -179,7 +177,7 @@ $ git branch
 
 ### Feature 브랜치
 
-기능(Feature) 브랜치는 [Feature Branch Workflow](#Feature Branch Workflow) 와 마찬가지로 실질적인 기능 구현이 이루어진다.
+기능(Feature) 브랜치는  [Feature Branch Workflow][#Feature-Branch-Workflow]와 마찬가지로 실질적인 기능 구현이 이루어진다.
 
 가장 최신의 개발 브랜치로부터 생성되며 마스터 브랜치와는 절대로 상호작용해서는 안된다.
 
@@ -213,7 +211,7 @@ $ git branch
   $ git flow feature finish feature_branch
   ```
 
-만약, 구현이 완료된 기능 브랜치를 풀 리퀘스트를 통해 개발 브랜치에 병합하고 싶다면  [Feature Branch Workflow](#Feature Branch Workflow) 와 같은 방식으로 하면 된다.
+만약, 구현이 완료된 기능 브랜치를 풀 리퀘스트를 통해 개발 브랜치에 병합하고 싶다면  [Feature Branch Workflow][#Feature-Branch-Workflow] 와 같은 방식으로 하면 된다.
 
 ### Release Branch
 
