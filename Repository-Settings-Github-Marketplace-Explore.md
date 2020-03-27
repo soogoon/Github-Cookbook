@@ -29,9 +29,9 @@ Github 페이지를 살펴보면 생각보다 우리가 매번 쓰는 기능만 
 
 > 깃헙 공식 문서는 다음과 같이 Marketplace 를 설명합니다.
 
->> GitHub Marketplace 는 GitHub 워크 플로우를 확장하고 개선하려는 개발자에게 연결합니다.  
-개발자가 GitHub Marketplace 에서 사용할 무료 및 유료 도구를 나열 할 수 있습니다.  
-GitHub Marketplace 는 개발자에게 GitHub 액션 및 앱이라는 두 가지 유형의 도구를 제공하며 각 도구는 GitHub Marketplace에 도구를 추가하기 위해 서로 다른 단계를 필요로합니다.
+>> GitHub Marketplace 는 당신을 GitHub 워크 플로우를 확장하고 개선하려는 개발자에게 연결시켜줍니다.  
+개발자들이 GitHub Marketplace 에서 사용할 수 있도록 무료 또는 유료 도구들을 게시 할 수 있습니다.  
+GitHub Marketplace 는 개발자에게 GitHub 액션 및 앱이라는 두 가지 유형의 도구를 제공하며, 각 도구를 GitHub Marketplace에 추가하기 위해선 각각 다른 단계를 필요로합니다.
 
 * 쉽게 말해서,  
 GitHub 와 연동해서 사용할 수 있도록 개발된 써드파티의 앱이나 액션을 구매할 수 있는 서비스입니다.  
@@ -56,7 +56,7 @@ Marketplace 에서는 GitHub 기능을 확장하는 App 과 GitHub 액션에서 
 </p>
 
 ---
-### 설치 방법
+### App 설치 방법
 먼저 설치 방법은 굉장히 쉬웠습니다.
   1.  자신이 적용하고자 하는 projects 의 성격에 따라 **Open souce, Individual, Professional 플랜**을 선택하고 **적용할 Organization** 을 선택합니다.
   
@@ -66,7 +66,7 @@ Marketplace 에서는 GitHub 기능을 확장하는 App 과 GitHub 액션에서 
   
   4. 설치할 앱이 계정에 **접근할 수 있는 권한을 허용**한다면 설치가 완료됩니다.
 
-### 삭제 방법
+### App 삭제 방법
 설치한 앱 확인 및 삭제하는 방법은 다음과 같습니다.
   1. 자신의 **account profile** 을 선택하고 **Settings** 로 들어갑니다.
   
@@ -77,6 +77,7 @@ Marketplace 에서는 GitHub 기능을 확장하는 App 과 GitHub 액션에서 
 ## Reviews
 GitHub Marketplace 에서 사용해본 앱 중 제일 괜찮았던 앱을 추천해보겠습니다.
 
+>### Apps
 ### [Imgbot](https://github.com/marketplace/imgbot)
 <img height="100" src="https://user-images.githubusercontent.com/44978839/77730803-e2009f00-7044-11ea-9fa1-5dd230bc93a7.png"> <img height="100" src="https://user-images.githubusercontent.com/44978839/77730892-1d02d280-7045-11ea-937a-dfd8c6284c5d.png">  
 * Repository( Xcode project 는 보통 Assets ) 에 있는 이미지의 품질은 유지하면서 파일 크기를 줄여 무손실 압축을 시켜주는 앱
@@ -84,6 +85,8 @@ GitHub Marketplace 에서 사용해본 앱 중 제일 괜찮았던 앱을 추천
 
 > 사용 예시 : https://github.com/GoldenTicketGroup/GoldenTicket-iOS/pull/1
 
+---
+>### Actions
 ### [Assignee to reviewer](https://github.com/marketplace/actions/github-action-for-assignee-to-reviewer)
 <img height="100" alt="스크린샷 2020-03-27 오후 5 13 01" src="https://user-images.githubusercontent.com/44978839/77735631-42480e80-704e-11ea-91ad-ff42a63fbaa6.png">  
 
@@ -92,7 +95,7 @@ GitHub Marketplace 에서 사용해본 앱 중 제일 괜찮았던 앱을 추천
 > 팀에서 Pull requests 담당자가 있지만 Review requests 시스템으로 바꾸고 싶을 때, 모든 사람이 워크 플로우를 변경하는 건 어려울 수 있습니다. 이 GitHub Action 은 담당자를 기반으로 Review requests 을 자동으로 작성하고 삭제하여 전환을 용이하게합니다. Review requests 에 의존하는 [Pull Reminders](https://pullreminders.com/) 와 같은 타사 앱을 사용할 때 특히 유용합니다.
 
 # Explore 살펴보기
-
+**Get email updates** 버튼을 누르면 이메일로 뉴스레터를 구독할 수 있습니다.
 <h4 align="center">Explore 탭에 들어갔을 때 보이는 상세 메뉴</h4>
 <p align="center"> 
 <img width="600" alt="스크린샷 2020-03-27 오후 6 58 22" src="https://user-images.githubusercontent.com/44978839/77744422-f81a5980-705c-11ea-8c84-8d66d4a760d2.png">
@@ -101,13 +104,13 @@ GitHub Marketplace 에서 사용해본 앱 중 제일 괜찮았던 앱을 추천
 ### Explore 
 * 들어가면 가장 먼저 보이는 Explore 페이지에는 사용자가 관심있어 할 만한 소식을 보여주는 뷰가 가장 크게 자리잡고 있습니다. 소식들을 보여주는 기준에는 다음과 같은 항목들이 있습니다.
 
-  * repositories you’ve viewed
+  * **repositories you’ve viewed**
 
-  * people you follow
+  * **people you follow**
 
-  * topics you've starred
+  * **topics you've starred**
 
-  * recommended by GitHub (App, Upcoming event, Collection)
+  * **recommended by GitHub** (App, Upcoming event, Collection)
 
 * 가장 좌측에서는 사용자 프로필과 함께 사용자가 starred 한 topics 와 repositories 를 한번에 모아볼 수 있는 리스트가 있습니다.
 
@@ -117,23 +120,49 @@ GitHub Marketplace 에서 사용해본 앱 중 제일 괜찮았던 앱을 추천
   * 프로그래밍 언어부터 테크닉, 개발 트랜드, 디자인 툴, 개발 환경, IDE, 라이브러리, 서비스까지 GitHub 에서 핫한 주제를 스타하여 소식을 받아볼 수 있습니다.
 
 ### Trending 
-  * 앞서 언급했던 Explore 메인 페이지 우측에 있는 탭과도 연결되는 부분으로 보다 상세한 필터링을 하여 관심 Repository 나 개발자를 팔로우할 수 있습니다.
-  
-  * Spoken Language, Language, Date range(오늘, 이번주, 이번달) 와 같은 필터가 있습니다.
-  
-  * 여기서 Spoken Language 는 사용자의 Personal Setting 에서 Profile 설정에 있는 Trend setting 과 연결되는 부분으로, 필터를 변경하고 싶다면 프로필 설정에서 변경하여 적용할 수 있습니다. 
+* 앞서 언급했던 Explore 메인 페이지 우측에 있는 탭과도 연결되는 부분으로 보다 상세한 필터링을 하여 관심 Repository 나 개발자를 팔로우할 수 있습니다.
+
+* **Spoken Language, Language, Date range(오늘, 이번주, 이번달)** 와 같은 필터가 있습니다.
+
+* 여기서 Spoken Language 는 사용자의 **Personal Setting** 에서 Profile 설정에 있는 **Trend setting** 과 연결되는 부분으로, 필터를 변경하고 싶다면 프로필 설정에서 변경하여 적용할 수 있습니다. 
  
  <h4 align="center">Profile 클릭 > Settings > Personal Settings > Profile > Trending settings</h4>
 <p align="center"> 
- <img width="600" alt="스크린샷 2020-03-27 오후 7 18 13" src="https://user-images.githubusercontent.com/44978839/77746175-df5f7300-705f-11ea-9de0-ad4ca8452e10.png">
+ <img width="650" alt="스크린샷 2020-03-27 오후 7 18 13" src="https://user-images.githubusercontent.com/44978839/77746175-df5f7300-705f-11ea-9de0-ad4ca8452e10.png">
 </p>
 
 ### Collections 
+* 급성장하는 산업, 주제 및 커뮤니티 목록과 인사이트를 선별하여 보여줍니다.
+
+* 해시태그로 분류된 카테고리에 들어가면 해당 콜렉션과 관련된 Repository 및 라이브러리를 볼 수 있습니다.
+
+* 사용자가 직접 자신이 관심있는 주제에 대해 새로운 콜렉션을 생성할 수도 있습니다.
+
+  * **새 콜렉션을 만들 시 유의 사항**
+  
+    * GitHub 커뮤니티에 콘텐츠를 제안할 때는 특정 사례를 제공하는 대신 다른 사람에게도 광범위하게 적용될 수 있는 주제이거나 현재 중요한 정보가 부족한 주제와 같이 가치있는 주제를 고려해야합니다.
+    
+    * 새로운 주제 또는 컬렉션을 제안하려면 추가 사항을 Pull requests 합니다. API 문서 및 스타일 가이드는 포함해야하는 정보와 양식에 대한 가이드라인을 제공합니다.
+    
+    * 이 저장소에는 추가 context 가 없는 가장 많이 사용되는 GitHub 주제 목록이 포함되어 있습니다. 풀 요청이 이러한 주제 중 하나를 추가하는 경우 주제가 선택 (완료 표시)되도록 주제 -todo.md를 업데이트하십시오.
+    
+    * 풀 요청 템플릿을 완전히 작성하십시오. 템플릿을 작성하지 않으면 풀 요청이 종료됩니다.
+    
+    * 모든 제안은 GitHub의 커뮤니티 지침 및 서비스 약관을 준수해야합니다. 당사의 서비스 약관에 따라 귀하는 귀하가 제공 한 컨텐츠에 대한 책임이 있으며 이를 사용할 권리가 있습니다.
+
 
 ### Events
+* GitHub community 와 함께 전 세계에서 열리는 컨퍼런스, 밋업, 그리고 해커톤에 참가할 수 있습니다.
+* 2020년 3월 5일 00시 01분부터 31일 23시 59분까지, 4주간 original GitHub Actions 을 구현하는 해커톤이 열렸었습니다.
+* 보너스로 선착순 1,000 개의 유효한 제출물은 무료 GitHub 사용권을 받습니다!
+<p align="center"> 
+<img width="800" alt="스크린샷 2020-03-27 오전 1 35 26" src="https://user-images.githubusercontent.com/44978839/77756339-50a82180-7072-11ea-8794-d9e67f072fa2.png">  
+  <img width="800" alt="스크린샷 2020-03-27 오후 9 36 28" src="https://user-images.githubusercontent.com/44978839/77756703-0c695100-7073-11ea-9e24-127402b4505a.png">
+
+</p>
 
 ### GitHub Sponsors
-
-**Get email updates** 버튼을 누르면 이메일로 뉴스레터를 구독할 수 있습니다.
+오픈소스를 개발하여 GitbHub 에 공여한 contributors 를 계속해서 Refresh 하여 찾아볼 수 있습니다.
 
 # Repository Setting 살펴보기
+앞의 내용과 구분하기 위해 따로 작성하여 업로드 하겠습니다. [다음 목차로 이동]()하고 싶다면
