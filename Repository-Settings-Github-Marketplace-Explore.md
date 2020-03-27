@@ -22,7 +22,7 @@ Github 페이지를 살펴보면 생각보다 우리가 매번 쓰는 기능만 
 </p>
 
 
-# 👀 Marketplace 살펴보기
+# Marketplace 살펴보기
 
 * GitHub Marketplace 영상 [시청하기](https://youtu.be/_HjToekoEMk)
 * GitHub Marketplace 란? [공식 문서 보기](https://developer.github.com/marketplace/)
@@ -91,7 +91,49 @@ GitHub Marketplace 에서 사용해본 앱 중 제일 괜찮았던 앱을 추천
 
 > 팀에서 Pull requests 담당자가 있지만 Review requests 시스템으로 바꾸고 싶을 때, 모든 사람이 워크 플로우를 변경하는 건 어려울 수 있습니다. 이 GitHub Action 은 담당자를 기반으로 Review requests 을 자동으로 작성하고 삭제하여 전환을 용이하게합니다. Review requests 에 의존하는 [Pull Reminders](https://pullreminders.com/) 와 같은 타사 앱을 사용할 때 특히 유용합니다.
 
-# 👃 Explore 살펴보기
+# Explore 살펴보기
 
+<h4 align="center">Explore 탭에 들어갔을 때 보이는 상세 메뉴</h4>
+<p align="center"> 
+<img width="600" alt="스크린샷 2020-03-27 오후 6 58 22" src="https://user-images.githubusercontent.com/44978839/77744422-f81a5980-705c-11ea-8c84-8d66d4a760d2.png">
+</p>
 
-# 👄 Repository Setting 살펴보기
+### Explore 
+* 들어가면 가장 먼저 보이는 Explore 페이지에는 사용자가 관심있어 할 만한 소식을 보여주는 뷰가 가장 크게 자리잡고 있습니다. 소식들을 보여주는 기준에는 다음과 같은 항목들이 있습니다.
+
+  * repositories you’ve viewed
+
+  * people you follow
+
+  * topics you've starred
+
+  * recommended by GitHub (App, Upcoming event, Collection)
+
+* 가장 좌측에서는 사용자 프로필과 함께 사용자가 starred 한 topics 와 repositories 를 한번에 모아볼 수 있는 리스트가 있습니다.
+
+* 가장 우측에서는 오늘 하루동안 가장 스타를 많이 받은 repositories 와 스타를 많이 받은 repository 를 소유하고 있는 핫한 개발자를 소개합니다. 이것은 Trending 탭과도 연결되며, 해당 탭에서 보다 자세한 필터링을 할 수 있습니다.
+
+### Topics 
+  * 프로그래밍 언어부터 테크닉, 개발 트랜드, 디자인 툴, 개발 환경, IDE, 라이브러리, 서비스까지 GitHub 에서 핫한 주제를 스타하여 소식을 받아볼 수 있습니다.
+
+### Trending 
+  * 앞서 언급했던 Explore 메인 페이지 우측에 있는 탭과도 연결되는 부분으로 보다 상세한 필터링을 하여 관심 Repository 나 개발자를 팔로우할 수 있습니다.
+  
+  * Spoken Language, Language, Date range(오늘, 이번주, 이번달) 와 같은 필터가 있습니다.
+  
+  * 여기서 Spoken Language 는 사용자의 Personal Setting 에서 Profile 설정에 있는 Trend setting 과 연결되는 부분으로, 필터를 변경하고 싶다면 프로필 설정에서 변경하여 적용할 수 있습니다. 
+ 
+ <h4 align="center">Profile 클릭 > Settings > Personal Settings > Profile > Trending settings</h4>
+<p align="center"> 
+ <img width="600" alt="스크린샷 2020-03-27 오후 7 18 13" src="https://user-images.githubusercontent.com/44978839/77746175-df5f7300-705f-11ea-9de0-ad4ca8452e10.png">
+</p>
+
+### Collections 
+
+### Events
+
+### GitHub Sponsors
+
+**Get email updates** 버튼을 누르면 이메일로 뉴스레터를 구독할 수 있습니다.
+
+# Repository Setting 살펴보기
