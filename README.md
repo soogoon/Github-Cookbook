@@ -29,7 +29,7 @@
 > | Chapter | Subject                 | Presenter      |
 > | ------- | ----------------------- | -------------- |
 > | 1       |       [Git Workflow](Git-Github-Collaborating.md)       | [soogoon](https://github.com/soogoon) |
-> | 2       | [Repository Settings & Github Marketplace, Explore](Repository-Settings-Github-Marketplace-Explore.md) |   [ttub-nii](https://github.com/ttub-nii)  |
+> | 2       | [Github Marketplace, Explore](Github-Marketplace-Explore.md) / [Repository Settings](Repository-Settings.md)  |   [ttub-nii](https://github.com/ttub-nii)  |
 > | 3       | [Pull & Request]() | [dongminyoon](https://github.com/dongminyoon) |
 > | 4       | [Github Project]() | [5anniversary](https://github.com/5anniversary) |
 > | 5       | [Issue Tracking]() | [khyunjiee](https://github.com/khyunjiee) |
