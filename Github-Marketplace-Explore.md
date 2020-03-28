@@ -1,3 +1,31 @@
+# 📌 사전 준비 사항
+upstream 으로부터 소스코드를 동기화하기 위해 clone 한 디렉토리로 이동하여 다음과 같은 절차를 행합니다.
+
+**1.** 현재 **프로젝트에 등록된 원격 저장소**를 확인할 수 있는 명령어입니다.
+```
+$ git remote -v
+```
+**2.** 아래와 같이 origin 저장소와 **upstream 저장소**가 모두 잘 출력되는지 확인합니다.
+```
+origin	https://github.com/ttub-nii/Github-Cookbook.git (fetch)
+origin	https://github.com/ttub-nii/Github-Cookbook.git (push)
+upstream	https://github.com/soogoon/Github-Cookbook.git (fetch)
+upstream	https://github.com/soogoon/Github-Cookbook.git (push)
+```
+**3.** 위와 같이 나타나지 않는다면 upstream 이름으로 **원본 소스코드의 위치를 추가**합니다.
+```
+$ git remote add upstream https://github.com/soogoon/Github-Cookbook.git
+```
+**4.** fetch 명령어로 원본 소스코드의 내용을 **로컬로 내려 받습니다.**
+```
+$ git fetch upstream
+```
+**5.** 내려받은 소스코드를 내 **repository 에 merge** 합니다.
+```
+$ git merge upstream/master
+```
+**동기화가 완료되었습니다. 이제 제가 준비한 2주차 내용을 보실 수 있습니다.**
+
 # 📌 Contents
 
 * 👀[Marketplace 는 무엇을 가능하게 하나?](#Marketplace-살펴보기)
