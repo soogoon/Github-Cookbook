@@ -32,11 +32,27 @@ Repository 에 들어가보면 Code 부터 Pull requests, Actions, Projects, Wik
 
 ### Features
 * Wikis 
+
+  * 선택을 해제하면 Wiki 탭을 비활성화할 수 있습니다. 또한 Wiki 를 collaborators 에게만 수정 권한을 부여할 수 있습니다.
+  
 * Issues 
-* Get organized with issue templates
+
+  * Issues 탭을 비활성화할 수 있고, **Set up templates** 버튼을 눌러 새 Issue 를 작성할 때 양식을 커스텀할 수 있습니다.
+  
+  * template 의 타입을 **Bug report, Fearture request, Custom template** 중에 선택하여 생성합니다.
+  
+  * 이슈 제목을 자동으로 설정하거나, repository 에 읽기 권한이 있는 사용자에게 이슈를 할당하거나, title, labels, YAML frontmatter 형식의 커스텀 라벨을 지정할 수도 있습니다.
+  
+<p align="center"> 
+<img width="600" alt="스크린샷 2020-03-28 오후 2 21 04" src="https://user-images.githubusercontent.com/44978839/77815564-67e12080-70ff-11ea-947e-51a380c02e4f.png">
+</p> 
+
 * Sponsorships 
+
   * 오픈소스 프로젝트의 가시성을 높이기 위한 스폰서 버튼 활성화
+  
 * Projects 
+
 ### Data services
 ### Merge button
 * Allow merge commits 
@@ -79,8 +95,17 @@ team 이나 person 을 검색 & 초대할 수 있고 권한을 수정하거나 �
   
   * Allow deletions
 
-## Webhooks
+## Webhooks  
+GitHub 의 특정 이벤트를 구독하는 GitHub Apps 또는 OAuth Apps 와 같은 integrations 을 설정할 수 있습니다.
+이벤트가 발생하면 Webhooks 의 URL에 HTTP POST 페이로드를 보냅니다. 웹 후크를 사용하여 외부 이슈 트래커를 업데이트하거나, CI 빌드를 트리거하거나 백업 미러를 업데이트하거나 프로덕션 서버에 배포할 수 있습니다.
+
 ## Notifications
+push 이벤트가 발생했을 때 설정한 이메일 주소로 알림을 받을 수 있습니다.
+
+* Approved header
+
+  * GitHub가 보내는 각 이메일 알림에는 헤더 정보가 포함되어 있습니다. 모든 이메일의 헤더 정보는 일관성이 있으므로 모든 GitHub 알림 또는 특정 유형의 GitHub 알림을 필터링하거나 전달할 수 있습니다.
+
 ## Integrations & services
 ## Deploy keys
 ## Secrets
