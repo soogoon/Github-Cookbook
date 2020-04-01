@@ -42,11 +42,11 @@ Github 페이지를 살펴보면 생각보다 우리가 매번 쓰는 기능만 
 <h4 align="center">Main page tab menu</h4>
 
 <p align="center"> 
-<img width="500" alt="스크린샷 2020-03-27 오전 12 16 46" src="https://user-images.githubusercontent.com/44978839/77663626-9a383400-6fc0-11ea-9bce-473462a97b3e.png">
+<img width="500" alt="스크린샷 2020-03-27 오전 12 16 46" src="https://user-images.githubusercontent.com/44978839/77663626-9a383400-6fc0-11ea-9bce-473462a97b3e.png">
 </p>
 <h4 align="center">Repository Setting</h4>
 <p align="center"> 
-<img width="720" alt="스크린샷 2020-03-27 오전 12 18 36" src="https://user-images.githubusercontent.com/44978839/77663631-9c9a8e00-6fc0-11ea-849c-165abb9a5f50.png">
+<img width="720" alt="스크린샷 2020-03-27 오전 12 18 36" src="https://user-images.githubusercontent.com/44978839/77663631-9c9a8e00-6fc0-11ea-849c-165abb9a5f50.png">
 </p>
 
 
@@ -56,7 +56,6 @@ Github 페이지를 살펴보면 생각보다 우리가 매번 쓰는 기능만 
 * GitHub Marketplace 란? [공식 문서 보기](https://developer.github.com/marketplace/)
 
 > 깃헙 공식 문서는 다음과 같이 Marketplace 를 설명합니다.
-
 >> GitHub Marketplace 는 당신을 GitHub 워크 플로우를 확장하고 개선하려는 개발자에게 연결시켜줍니다.  
 개발자들이 GitHub Marketplace 에서 사용할 수 있도록 무료 또는 유료 도구들을 게시 할 수 있습니다.  
 GitHub Marketplace 는 개발자에게 GitHub 액션 및 앱이라는 두 가지 유형의 도구를 제공하며, 각 도구를 GitHub Marketplace에 추가하기 위해선 각각 다른 단계를 필요로합니다.
@@ -66,7 +65,7 @@ GitHub 와 연동해서 사용할 수 있도록 개발된 써드파티의 앱이
 Marketplace 에서는 GitHub 기능을 확장하는 App 과 GitHub 액션에서 사용할 수 있는 Action 을 구매할 수 있습니다.
 
 ## Apps
-* **Verified Apps** : 녹색 배지가 있습니다.
+* **Verified Apps** : 녹색 배지가 있습니다. 구독 등급 별로 제공하는 서비스가 다르고, 무료 또는 유료로 결제하여 사용할 수 있습니다.
 
 * **Unverified Apps** : 확인 된 앱에 필요한 보안, 테스트 및 확인주기를 거치지 않습니다. 목록 옆에 회색 배지가 있으며 무료 앱으로만 사용할 수 있습니다.
 
@@ -110,13 +109,19 @@ GitHub Marketplace 에서 사용해본 앱 중 제일 괜찮았던 앱을 추천
 <img height="100" src="https://user-images.githubusercontent.com/44978839/77730803-e2009f00-7044-11ea-9fa1-5dd230bc93a7.png"> <img height="100" src="https://user-images.githubusercontent.com/44978839/77730892-1d02d280-7045-11ea-937a-dfd8c6284c5d.png">  
 * Repository( Xcode project 는 보통 Assets ) 에 있는 이미지의 품질은 유지하면서 파일 크기를 줄여 무손실 압축을 시켜주는 앱
 > Imgbot 은 본인들의 툴을 사용해야하는 이유에 대해 이미지가 최적화 되어있을수록 더 빨리 로드되고, 페이지가 빠를수록 전환율이 높아지기 때문에 이탈률이 낮아지고 사용자가 더 행복해질 것이라고 어필하면서 자신들의 앱이 이 모든 것을 몇 번의 클릭만으로 가능할 수 있게 한다고 설명합니다.
+>> 사용 예시 : https://github.com/GoldenTicketGroup/GoldenTicket-iOS/pull/1
 
-> 사용 예시 : https://github.com/GoldenTicketGroup/GoldenTicket-iOS/pull/1
+### [Codacy](https://github.com/marketplace/codacy)
+<img height="100" src="https://user-images.githubusercontent.com/44978839/78118368-e280a780-7441-11ea-96fa-0122c4ae4055.png"> <img height="100" src="https://user-images.githubusercontent.com/44978839/78118476-06dc8400-7442-11ea-8a06-3c096640c1b3.png">
+
+* Codacy 는 자동으로 코드를 분석하여 품질 관리를 해주는 도구로 개발자가 더 나은 소프트웨어를 더 빨리 제공할 수 있도록 도와주는 앱
+> Codacy 를 사용하면 모든 commit 과 Pull requests 마다 static 분석, 순환 복잡도, duplication, 코드 unit 테스트 커버리지 변화를 확인할 수 있습니다. 코드 퀄리티를 향상시키고, 코드 리뷰 하는 데에 시간을 절약하고, 보안을 강화하고, 개발자들이 빠르게 온보딩할 수 있도록 합니다.
+>> 사용 예시 : https://app.codacy.com/gh/GoldenTicketGroup/GoldenTicket-iOS/dashboard
 
 ---
 >### Actions
 ### [Assignee to reviewer](https://github.com/marketplace/actions/github-action-for-assignee-to-reviewer)
-<img height="100" alt="스크린샷 2020-03-27 오후 5 13 01" src="https://user-images.githubusercontent.com/44978839/77735631-42480e80-704e-11ea-91ad-ff42a63fbaa6.png">  
+<img height="100" alt="스크린샷 2020-03-27 오후 5 13 01" src="https://user-images.githubusercontent.com/44978839/77735631-42480e80-704e-11ea-91ad-ff42a63fbaa6.png">  
 
 * 유저가 assigned 되었든 unassigned 되었든 간에 Pull requests 에 대해 assigned / unassigned 이벤트를 알려주는 액션
 
@@ -126,7 +131,7 @@ GitHub Marketplace 에서 사용해본 앱 중 제일 괜찮았던 앱을 추천
 **Get email updates** 버튼을 누르면 이메일로 뉴스레터를 구독할 수 있습니다.
 <h4 align="center">Explore 탭에 들어갔을 때 보이는 상세 메뉴</h4>
 <p align="center"> 
-<img width="600" alt="스크린샷 2020-03-27 오후 6 58 22" src="https://user-images.githubusercontent.com/44978839/77744422-f81a5980-705c-11ea-8c84-8d66d4a760d2.png">
+<img width="600" alt="스크린샷 2020-03-27 오후 6 58 22" src="https://user-images.githubusercontent.com/44978839/77744422-f81a5980-705c-11ea-8c84-8d66d4a760d2.png">
 </p>
 
 ### Explore 
@@ -156,7 +161,7 @@ GitHub Marketplace 에서 사용해본 앱 중 제일 괜찮았던 앱을 추천
  
  <h4 align="center">Profile 클릭 > Settings > Personal Settings > Profile > Trending settings</h4>
 <p align="center"> 
- <img width="650" alt="스크린샷 2020-03-27 오후 7 18 13" src="https://user-images.githubusercontent.com/44978839/77746175-df5f7300-705f-11ea-9de0-ad4ca8452e10.png">
+ <img width="650" alt="스크린샷 2020-03-27 오후 7 18 13" src="https://user-images.githubusercontent.com/44978839/77746175-df5f7300-705f-11ea-9de0-ad4ca8452e10.png">
 </p>
 
 ### Collections 
@@ -184,8 +189,8 @@ GitHub Marketplace 에서 사용해본 앱 중 제일 괜찮았던 앱을 추천
 * 2020년 3월 5일 00시 01분부터 31일 23시 59분까지, 4주간 original GitHub Actions 을 구현하는 해커톤이 열렸었습니다.
 * 보너스로 선착순 1,000 개의 유효한 제출물은 무료 GitHub 사용권을 받습니다!
 <p align="center"> 
-<img width="800" alt="스크린샷 2020-03-27 오전 1 35 26" src="https://user-images.githubusercontent.com/44978839/77756339-50a82180-7072-11ea-8794-d9e67f072fa2.png">  
-  <img width="800" alt="스크린샷 2020-03-27 오후 9 36 28" src="https://user-images.githubusercontent.com/44978839/77756703-0c695100-7073-11ea-9e24-127402b4505a.png">
+<img width="800" alt="스크린샷 2020-03-27 오전 1 35 26" src="https://user-images.githubusercontent.com/44978839/77756339-50a82180-7072-11ea-8794-d9e67f072fa2.png">  
+  <img width="800" alt="스크린샷 2020-03-27 오후 9 36 28" src="https://user-images.githubusercontent.com/44978839/77756703-0c695100-7073-11ea-9e24-127402b4505a.png">
 
 </p>
 
