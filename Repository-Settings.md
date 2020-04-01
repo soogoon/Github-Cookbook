@@ -1,7 +1,7 @@
 # 📌 Previous Contents
 * 👀[Marketplace & Explore 탭 살펴보기](Github-Marketplace-Explore.md)
-----
-* 👄[Repository 환경 제대로 알고 설정하기](#Repository-Setting-살펴보기)
+---
+# [Repository 환경 제대로 알고 설정하기](#Repository-Setting-살펴보기)
 
 Repository 에 들어가보면 Code 부터 Pull requests, Actions, Projects, Wiki, Security, Insights, 그리고 **Settings** 까지
 
@@ -28,8 +28,10 @@ Repository 에 들어가보면 Code 부터 Pull requests, Actions, Projects, Wik
 ### Template repository 
 2019년 6월 9일자로 새로 추가된 기능인 template repository는, 설정을 체크하면 모든 파일과 폴더가 포함된 새 repository 를 생성할 수 있습니다.  
 튜토리얼을 작성하거나 기업용 *boilerplate* 를 만들거나 프레임워크를 배포하고 싶을 때 유용하게 사용할 수 있습니다. 
-> 사용 예시 : https://github.com/ttub-nii/test-template-repo
-> 적용 사례 : https://github.com/ttub-nii/Study-Node-Server
+
+> 사용 예시 1 : https://github.com/ttub-nii/test-template-repo
+
+> 사용 예시 2 : https://github.com/ttub-nii/Study-Node-Server
 
 **Fork 와 무엇이 다른가?**
 Fork 와 유사하지만 매우 중요한 다른 점이 있습니다.
@@ -47,7 +49,9 @@ Fork 와 유사하지만 매우 중요한 다른 점이 있습니다.
 
 **Social preview 적용 전 / 후 비교**
 
+<p align="center"> 
 <img width="350" src="https://user-images.githubusercontent.com/44978839/77940171-3d57b900-72f3-11ea-8f82-f509072e4d76.png">  <img width="350" src="https://user-images.githubusercontent.com/44978839/77940175-4052a980-72f3-11ea-8d80-2bc23d207a32.png">
+</p>
 
 ##
 ### Features
@@ -77,23 +81,23 @@ Fork 와 유사하지만 매우 중요한 다른 점이 있습니다.
   
   * **Set up sponsor button** 을 누르면 오픈소스 프로젝트의 가시성을 높이기 위한 스폰서 버튼 활성화 할 수 있습니다.
   
-  > 참고
+  > TIP
   >> Github Sponsor 계정으로 등록하고 은행, 세금 정보를 제출하고 GitHub 계정에서 2 단계 인증을 활성화하면 스폰서 개발자가 될 수 있습니다.
   
 * Projects
 
+   <img width="550" alt="스크린샷 2020-03-31 오전 2 07 15" src="https://user-images.githubusercontent.com/44978839/77941038-7e040200-72f4-11ea-8126-7bf0f95b93d8.png">
+   
   * 작업을 조직화, 구성하거나 우선 순위를 매길 때 유용하게 사용할 수 있는 게시판입니다.  
   
   * 특정 기능의 작업이나 포괄적인 로드맵이나, 출시 체크 리스트 등에 관한 프로젝트를 만들 수 있습니다.
 
-   <img width="550" alt="스크린샷 2020-03-31 오전 2 07 15" src="https://user-images.githubusercontent.com/44978839/77941038-7e040200-72f4-11ea-8126-7bf0f95b93d8.png">
-
-    > **Projects Template 종류**
-    >>   * None
-    >> * Basic kanban
-    >> * Automated kanban
-    >> * Automated kanban with reviews
-    >> * Bug triage
+   > **Projects Template 종류**
+   >>   * None
+   >> * Basic kanban
+   >> * Automated kanban
+   >> * Automated kanban with reviews
+   >> * Bug triage
 
 ##
 ### Data services
@@ -194,20 +198,103 @@ Pull requests 가 Merge 전에 일련의 확인을 통과하도록 요구할 수
 > 사용 예시 : https://github.com/binarysound/web-lab/issues/4
 
 ## Webhooks  
-GitHub 의 특정 이벤트를 구독하는 GitHub Apps 또는 OAuth Apps 와 같은 integrations 을 설정할 수 있습니다.
-이벤트가 발생하면 Webhooks 의 URL에 HTTP POST 페이로드를 보냅니다. 웹 후크를 사용하여 외부 이슈 트래커를 업데이트하거나, CI 빌드를 트리거하거나 백업 미러를 업데이트하거나 프로덕션 서버에 배포할 수 있습니다.
+앱이 다른 앱에 실시간 정보를 제공하는 방법입니다.  
+GitHub 의 특정 이벤트를 구독하는 GitHub Apps 또는 OAuth Apps 와 같은 integrations 을 설정할 수 있습니다.  
+이벤트가 발생하면 Webhooks 의 URL에 HTTP 요청을 다른 애플리케이션에 주로 POST 형태의 페이로드를 보낼 것입니다.  
+간단하게 요약하자면, Webhook 기능을 사용해 특정 API를 호출하는 것이 가능합니다.
+
+> 참고 | [44bits - 깃허브 웹훅을 활용해 슬랙에 이벤트 전달하기](https://www.44bits.io/ko/post/notifying-github-event-by-using-github-webhook) | [SendGrid Team - What’s a Webhook?](https://sendgrid.com/blog/whats-webhook/)
+
+* 유일한 단점은 처음에 설정하기가 어렵다는 것인데 Webhook 은 API와는 반대 방향으로 작동합니다.  
+
+* Webhook 은 API 스펙에 해당하기 때문에 Webhook 을 사용하기 위해서는 API를 설계해야 합니다.
+
+* 예를 들어 보통 API를 호출하면 어떤 정보를 되돌려줍니다만, Webhook 에 등록하면 어떤 이벤트가 발생할 때 거꾸로 깃허브에서 등록한 URL을 호출합니다. 
 
 ## Notifications
 push 이벤트가 발생했을 때 설정한 이메일 주소로 알림을 받을 수 있습니다.
 
 * Approved header
 
-  * GitHub가 보내는 각 이메일 알림에는 헤더 정보가 포함되어 있습니다. 모든 이메일의 헤더 정보는 일관성이 있으므로 모든 GitHub 알림 또는 특정 유형의 GitHub 알림을 필터링하거나 전달할 수 있습니다.
+  * GitHub가 보내는 각 이메일 알림에는 헤더 정보가 포함되어 있습니다. 
+  
+  * 모든 이메일의 헤더 정보는 일관성이 있으므로 모든 GitHub 알림 또는 특정 유형의 GitHub 알림을 필터링하거나 전달할 수 있습니다.
+  
+  * 'Approved' 헤더 값을 추가하면 읽기 전용 메일을 자동으로 승인합니다.
 
-## Integrations & services
+## Integrations
+설치된 Github Apps 를 확인할 수 있습니다.
+
+> 사용 예시
+
+<p align="center"> 
+<img width="801" alt="스크린샷 2020-04-01 오후 8 23 33" src="https://user-images.githubusercontent.com/44978839/78131843-adcb1b00-7456-11ea-8ef2-679bea0d18b6.png">
+</p>
+
 ## Deploy keys
-## Secrets
-## Actions
-## Interaction limits (Moderation)
+repository 의 SSH 키로, repository 에 접근하는 클라이언트에게 읽기 전용 (원하는 경우 r / w) 액세스 권한을 부여합니다.  
+이름에서 알 수 있듯이, 주요 기능은 읽기 접근 권한이 필요한 배포 프로세스에서 사용됩니다.  
+따라서 Deploy key 를 설정하면 서버 쪽이 망가졌을 경우에 대비하여 repository 를 공격으로부터 안전하게 유지할 수 있습니다.
+> 사용 방법 : https://gist.github.com/zhujunsan/a0becf82ade50ed06115
 
-> 참고 | [GitHub Help](https://help.github.com/en/github/administering-a-repository/managing-repository-settings)
+## Secrets
+암호화 되어 저장되는 환경 변수로 특정 선택한 작업에만 노출됩니다.  
+Repository 에 공동 작업자 액세스 권한이 있는 사람은 누구나 이러한 비밀을 사용할 수 있습니다.  
+액세스 토큰과 같은 민감한 정보를 저장할 수 있고, fork 로 부터 Pull requests 한 워크 프로우에는 Secret 이 전달되지 않습니다.  
+
+Github 공식 문서에서는 Secret 이름은 공백을 포함할 수 없고, JSON 이나 인코딩 된 Git Blob 과 같은 structured data 를 secret 값으로 저장하는 걸 지양하라고 합니다.
+> 출처
+>> https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets
+
+## Actions
+
+* **local 과 third party Action 모두 허용함**
+  * Action 코드가 이 repository 에 있는지, organization 에 있는지, 제 3자가 소유한 repository 에 있는지 상관 없이 모든 Action 을 실행할 수 있습니다.
+
+* **local Action 만 허용함**
+  * 해당 repository 나 organization 에 속하기만 하면 어떤 Action 이든 실행되는 것을 허용합니다.
+
+* **Action 사용 안함**
+  * 해당 repository 에서 모든 Action 을 불허합니다.
+
+## Security Alerts (organization 에 속한 repository)
+보안 경고는 관리자가 권한을 부여한 사람과 팀만 볼 수 있습니다.  
+권한을 부여받으면 dependencies 중 하나에서 새로운 취약점이 발견되면 알림을 주고, 자동 업데이트한 보안 내용의 추가 세부 정보들을 볼 수 있습니다.  
+각 개인은 해당 탭에서 보안 알림을 받는 방법을 관리 할 수 있습니다.
+
+> **Choose the people or teams you would like to grant access to security alerts**
+>> 보안 경고에 접근할 수 있도록 하려는 개인이나 팀을 찾아 권한을 부여합니다.
+
+---
+# Moderation
+## Interaction limits
+24시간 동안 repository 나 organization 의 특정 사용자가 
+1. comment 를 남기거나, 
+2. issues 를 열거나, 
+3. Pull requests 를 작성하는 것을 제한할 수 있습니다. 
+
+예를 들어, Github 공식 문서는
+```
+This may be used to force a "cool-down" period during heated discussions.
+```
+너무 논쟁이 과열됐을 때 이 기능을 사용하여 진정 기간을 가질 수 있다고 설명합니다.
+
+* **Limit to existing users**
+  * Users that have recently created their account will be unable to interact with the repository.
+
+  * 24시간 이내에 계정을 만든 사용자 중에 contributions 가 없고 공동 작업자도 아닌 사용자의 활동을 제한합니다.
+
+* **Limit to prior contributors**
+  * Users that have not previously committed to the repository’s master branch will be unable to interact with the repository.
+  
+  * 이전에 master 브랜치에 commit 하지 않았거나 공동 작업자가 아닌 사용자의 활동을 제한합니다.
+
+* **Limit to repository collaborators**
+  * 공동 작업자가 아닌 사용자의 활동을 제한합니다.
+
+## Reported content (organization 에 속한 repository)
+collaborators 나 contributors 는 욕설 또는 파괴적인 콘텐츠를 신고할 수 있습니다.  
+**Accept** 한다면 repository 관리자에게 collaborators, contributors 가 콘텐츠를 신고할 수 있는 옵션이 보여집니다.
+
+---
+### 끝! 모두 수고 많으셨습니다 :)
