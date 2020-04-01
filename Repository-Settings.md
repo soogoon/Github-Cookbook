@@ -3,13 +3,13 @@
 ----
 * 👄[Repository 환경 제대로 알고 설정하기](#Repository-Setting-살펴보기)
 
-Repository 에 들어가보면 Code 부터 Pull requests, Actions, Projects, Wiki, Security, Insights, 그리고 Settings 까지
+Repository 에 들어가보면 Code 부터 Pull requests, Actions, Projects, Wiki, Security, Insights, 그리고 **Settings** 까지
 
 8가지의 메뉴 중에서 **Settings 에서 할 수 있는 것들**에 대해 얼마나 알고 있는지 스스로 자문해봅시다.
 
 저는 주로 Repository 의 이름을 변경하거나, 위치를 이동하거나, 삭제할 때 이외에는 잘 사용하지 않았던 것 같습니다.
 
-이번에는 우리가 주로 사용하는 Options Settings 이외의 탭 메뉴에 대해서도 살펴보려고 합니다.
+이번에는 우리가 주로 사용하는 **Options Settings 이외의 다른 탭 메뉴들**에 대해서도 살펴보려고 합니다.
 
 <h4 align="center">Repository Setting</h4>
 <p align="center"> 
@@ -26,8 +26,10 @@ Repository 에 들어가보면 Code 부터 Pull requests, Actions, Projects, Wik
 
 ## Options
 ### Template repository 
-template repository 의 모든 파일과 폴더가 포함된 새 repository 를 생성할 수 있습니다.  
-튜토리얼을 작성하거나 기업용 boilerplate 를 만들거나 프레임워크를 배포하고 싶을 때 유용하게 사용할 수 있습니다. 
+2019년 6월 9일자로 새로 추가된 기능인 template repository는, 설정을 체크하면 모든 파일과 폴더가 포함된 새 repository 를 생성할 수 있습니다.  
+튜토리얼을 작성하거나 기업용 *boilerplate* 를 만들거나 프레임워크를 배포하고 싶을 때 유용하게 사용할 수 있습니다. 
+> 사용 예시 : https://github.com/ttub-nii/test-template-repo
+> 적용 사례 : https://github.com/ttub-nii/Study-Node-Server
 
 **Fork 와 무엇이 다른가?**
 Fork 와 유사하지만 매우 중요한 다른 점이 있습니다.
@@ -51,10 +53,14 @@ Fork 와 유사하지만 매우 중요한 다른 점이 있습니다.
 ### Features
 * Wikis 
 
+  * 자신의 Repository 에 대해 documents 를 작성해서 다른 이들이 프로젝트를 사용하거나 프로젝트에 기여할 수 있도록 합니다.
+  
   * 선택을 해제하면 Wiki 탭을 비활성화할 수 있습니다. 또한 Wiki 를 collaborators 에게만 수정 권한을 부여할 수 있습니다.
 
 * Issues 
 
+  * 사용자의 피드백을 모으거나, sw 의 버그를 report 하거나, task 를 오거나이즈 하는 데에 사용할 수 있습니다.
+  
   * Issues 탭을 비활성화할 수 있고, **Set up templates** 버튼을 눌러 새 Issue 를 작성할 때 양식을 커스텀할 수 있습니다.
   
   * template 의 타입을 **Bug report, Fearture request, Custom template** 중에 선택하여 생성합니다.
@@ -67,7 +73,12 @@ Fork 와 유사하지만 매우 중요한 다른 점이 있습니다.
 
 * Sponsorships 
 
-  * 오픈소스 프로젝트의 가시성을 높이기 위한 스폰서 버튼 활성화
+  * 오픈 소스 프로젝트에 가치를 기여하고 해당 repository 에 대해 스폰서 십(경제적 지원)을 받을 것인지 설정하는 부분입니다.
+  
+  * **Set up sponsor button** 을 누르면 오픈소스 프로젝트의 가시성을 높이기 위한 스폰서 버튼 활성화 할 수 있습니다.
+  
+  > 참고
+  >> Github Sponsor 계정으로 등록하고 은행, 세금 정보를 제출하고 GitHub 계정에서 2 단계 인증을 활성화하면 스폰서 개발자가 될 수 있습니다.
   
 * Projects
 
@@ -88,6 +99,7 @@ Fork 와 유사하지만 매우 중요한 다른 점이 있습니다.
 ### Data services
 denpendency 에서 취약성이 발견되었을 때 알림을 주는 기능입니다.  
 여기서 취약성은 프로젝트 또는 해당 코드를 사용하는 다른 프로젝트의 기밀성, 무결성, 가용성을 손상시키기 위해 악용될 수 있는 프로젝트 코드의 문제입니다.  
+
 **Security Alerts 에는 다음과 같은 내용이 포함됩니다.**
 
 * 심각도 수준
@@ -98,19 +110,30 @@ denpendency 에서 취약성이 발견되었을 때 알림을 주는 기능입�
 
 ##
 ### Merge button
+Pull request 를 merge 할 때, commit / 스쿼시 / 리베이스 중에서 어떤 조합을 허용할 것인지 설정할 수 있습니다.  
+만약 protected 브랜치에서 linear history 를 활성화 한 경우에는 스쿼시나 리베이스를 허용해야 합니다.  
+다음과 같은 옵션 중에서 하나 이상의 옵션은 활성화 되어 있어야 합니다.  
+
 * Allow merge commits 
+
 * Allow squash merging 
+
 * Allow rebase merging 
+
+Pull request 가 merge 된 후 헤드 브랜치를 자동으로 삭제할 수 있습니다.
+
 * Automatically delete head branches 
 
 ##
 ### GitHub Pages
-GitHub 저장소에서 직접 자신, 조직 또는 프로젝트에 대한 웹 사이트를 호스팅 할 수 있습니다.
+GitHub 저장소에서 직접 개인, organization 또는 프로젝트에 대한 웹 사이트를 호스팅 할 수 있습니다.  
 GitHub의 저장소에서 HTML, CSS 및 JavaScript 파일을 직접 가져 와서 웹 사이트를 게시하는 정적 사이트 호스팅 서비스입니다.
 
 * Source
 
-  * default source 를 사용하면 가장 최근에 빌드된 master branch 의 내용으로 사이트가 자동으로 게시됩니다. 다른 브랜치나 폴더에서 프로젝트 사이트를 게시하도록 선택할 수도 있습니다.
+  * default source 를 사용하면 가장 최근에 빌드된 master branch 의 내용으로 사이트가 자동으로 게시됩니다. 
+  
+  * 다른 브랜치나 폴더에서 프로젝트 사이트를 게시하도록 선택할 수도 있습니다.
   
 * Theme Chooser
 
@@ -120,10 +143,15 @@ GitHub의 저장소에서 HTML, CSS 및 JavaScript 파일을 직접 가져 와�
 
 ##
 ### Danger Zone
+
 * 비공개 & 공개 설정
-* repository 소유권 넘기거나 위치 이동
-* repository 를 아카이빙 목적, read-only 로 사용하기
-* repository 를 삭제하기. ~~그러나 삭제된 repository 되돌리기는 User settings > Repositories 에서 가능합니다.~~
+
+* repository 의 Owner 를 변경하거나, 위치를 이동
+
+* repository 를 아카이빙 목적, read-only 로 사용
+
+* repository 를 삭제 
+  * ~~그러나 삭제된 repository 되돌리기는 User settings > Repositories 에서 가능합니다.~~
 
 ##
 ## Manage access  
@@ -131,25 +159,39 @@ team 이나 person 을 검색 & 초대할 수 있고 권한을 수정하거나 �
 
 ## Branches
 ### Branch protection rules
-* Pull requests 가 Merge 전에 일련의 확인을 통과하도록 요구할 수 있습니다. 
+Pull requests 가 Merge 전에 일련의 확인을 통과하도록 요구할 수 있습니다.  
 예를 들어 상태 확인을 통과하지 못한 Pull requests 을 차단하거나 특정 수의 승인 검토가 있어야 병합할 수 있습니다.
 
-* **Add rules** 버튼을 눌러 다음과 같은 규칙을 부여할 수 있습니다.
+**Add rules** 버튼을 눌러 다음과 같은 규칙을 부여할 수 있습니다.
 
-  * Require pull request reviews before merging
+> 참고 | [오지는 컴퓨터 공부 - Git에 대해 알아보자 5. GitHub 추가 기능들](https://cupjoo.tistory.com/11)
+
+  * **Require pull request reviews before merging**
   
-  * Require status checks to pass before merging
+    * 지정된 횟수 만큼의 승인이 완료되어야 Merge가 가능합니다. 
+    
+    * 이 조건을 선택할 경우, 요구 승인 수를 설정할 수 있으며 또 다른 추가 선택 사항들이 나타납니다.
   
-  * Require signed commits
-  
-  * Require linear history
+  * **Require status checks to pass before merging**
+    * CI 테스트를 통해 기존 브랜치와 충돌이 없을 시에만 Merge가 가능합니다.
+    
+    * A 브랜치가 최신인 상태를 기준으로 해당 검사를 실시하기에, B 브랜치에서 코드를 수정하던 중 C 브랜치에 의해 A 브랜치가 업데이트 됐을 시, 새로운 A 브랜치를 B 브랜치로 Merge 시켜야 합니다.
+    
+  * **Require signed commits**
+    * GPG key가 있어야 Merge가 가능합니다.
+    
+  * **Require linear history**
     * to block all merge commits from a protected branch.
     
-  * Include administrators
+  * **Include administrators**
+    * 관리자에게도 이 모든 제약 사항을 적용하도록 하는 옵션입니다.
   
-  * Allow force pushes
+강제로 푸시하는 것을 허용하거나, 브랜치를 삭제하는 것 역시 권한을 설정할 수 있습니다.
+
+  * **Allow force pushes**
   
-  * Allow deletions
+  * **Allow deletions**
+> 사용 예시 : https://github.com/binarysound/web-lab/issues/4
 
 ## Webhooks  
 GitHub 의 특정 이벤트를 구독하는 GitHub Apps 또는 OAuth Apps 와 같은 integrations 을 설정할 수 있습니다.
