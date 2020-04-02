@@ -30,10 +30,10 @@
 > | ------- | ----------------------- | -------------- |
 > | 1       |       [Git Workflow](Git-Github-Collaborating.md)       | [soogoon](https://github.com/soogoon) |
 > | 2       | [Github Marketplace, Explore](Github-Marketplace-Explore.md) / [Repository Settings](Repository-Settings.md)  |   [ttub-nii](https://github.com/ttub-nii)  |
-> | 3       | [Pull & Request]() | [dongminyoon](https://github.com/dongminyoon) |
+> | 3       | [Pull & Request]() | [soogoon](https://github.com/soogoon) |
 > | 4       | [Github Project]() | [5anniversary](https://github.com/5anniversary) |
 > | 5       | [Issue Tracking]() | [khyunjiee](https://github.com/khyunjiee) |
-> | 6       |  [Github blog with Github page]() | [jihye0420](https://github.com/jihye0420) |
+> | 6       | [Github blog with Github page]() | [jihye0420](https://github.com/jihye0420) |
 
 ## Contributers
 
@@ -43,3 +43,4 @@
 - [jihye0420](https://github.com/jihye0420)
 - [dongminyoon](https://github.com/dongminyoon)
 - [khyunjiee](https://github.com/khyunjiee)
+- [ChoiEunji0114](https://github.com/ChoiEunji0114)
