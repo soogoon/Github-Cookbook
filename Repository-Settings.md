@@ -42,15 +42,21 @@ Fork 와 유사하지만 매우 중요한 다른 점이 있습니다.
 
 * fork 는 기존 프로젝트에 코드를 기여하기 위한 임시적인 방법일 수 있지만 template 에서 repository 를 만들면 새 프로젝트를 빠르게 시작할 수 있습니다.
 
+<h4 align="center">Fork commit 이 Merge 되기 전 / 후 비교</h4>
+
+<p align="center"> 
+<img width="200" alt="스크린샷 2020-04-01 오후 11 46 29" src="https://user-images.githubusercontent.com/44978839/78213863-c7b83c80-74ee-11ea-8c0c-f944be047b86.png">　 　 <img width="200" alt="스크린샷 2020-04-02 오후 1 40 17" src="https://user-images.githubusercontent.com/44978839/78213865-c8e96980-74ee-11ea-941c-fd0e55a7d557.png">
+</p>
+
 ##
 ### Social preview
 누군가가 Repository 에 링크를 걸 때 소셜 미디어 플랫폼에 표시되는 이미지를 설정할 수 있습니다.  
 이미지를 추가하지 않으면 저장소 및 소유자 아바타에 대한 기본 정보가 표시됩니다. 
 
-**Social preview 적용 전 / 후 비교**
+<h4 align="center">Social preview 적용 전 / 후 비교</h4>
 
 <p align="center"> 
-<img width="350" src="https://user-images.githubusercontent.com/44978839/77940171-3d57b900-72f3-11ea-8f82-f509072e4d76.png">  <img width="350" src="https://user-images.githubusercontent.com/44978839/77940175-4052a980-72f3-11ea-8d80-2bc23d207a32.png">
+<img width="300" src="https://user-images.githubusercontent.com/44978839/77940171-3d57b900-72f3-11ea-8f82-f509072e4d76.png">   　 <img width="300" src="https://user-images.githubusercontent.com/44978839/77940175-4052a980-72f3-11ea-8d80-2bc23d207a32.png">
 </p>
 
 ##
