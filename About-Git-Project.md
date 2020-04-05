@@ -2,7 +2,9 @@
 
 Github에서 제공하는 project탭에 대해 차근차근 알아보는 시간을 가지도록 합시다!
 
-처음 project 탭에 들어가게 되면 Project에 사용에 대한 설명이 기본적으로 되어있는데요.
+프로젝트는 이슈, 마일스톤, 코드리뷰, 일정관리, 버그 리포트등 깃에서 제공 되는 기능을 한눈에 볼수있고 간편하게 조정할수있는 탭입니다.
+
+처음 project 탭에 들어가게 되면 Project에 사용에 대한 설명이 기본적으로 되어있는데요. 
 
 1. 작업 정리 : 우리들의 Project Board에 issue와 pull request들을 더하고, 우선 순위대로 노트카드 안에 idea와 업무 리스트를 정리 합니다.
 2. 프로젝트 계획 : "To Do" , "In Progress", "Done"와 같은 기준을 정해 작업을 상태를 정렬합니다. 
@@ -21,11 +23,25 @@ Github에서 제공하는 project탭에 대해 차근차근 알아보는 시간�
 
 프로젝트 보드를 만들수 있는 공간은 3군데가 있습니다.
 
-1. user 
-2. organization 
-3. repo 
+1. User
 
-user의 프로젝트는 
+    <img src="img/project/project_in_user.png" width="400">
+
+   사용자의 repo를 이용해 프로젝트를 생성할 수 있습니다.
+
+2. organization
+
+    <img src="img/project/project_in_organization.png" width="400">
+
+   해당 조직에 속한 repo만을 이용해 프로젝트를 생성할 수 있습니다.
+
+3. repo
+
+    <img src="img/project/project_in_repo.png" width="400">
+
+   repo하나로 범위가 한정되고 단일 repo에 속한 요청만을 끌어옵니다.
+
+또한, user와 organization의 프로젝트 보드는 최대 25개의 저장소만을 연결할수가 있습니다.
 
 
 
@@ -38,8 +54,47 @@ user의 프로젝트는
 템플릿에는 None, Basic kanban, Automated kanban, Automated kanban with reviews, Bug triage 5가지가 있습니다.
 
 1. None : 말 그대로 프로젝트만 생성이 됩니다
-2. Basic kanban :
-3. Automated kanban :
-4. Automated kanban with reviews :
-5. Bug triage :
+
+   <img src="img/project/none.png" width="400">
+
+   
+
+2. Basic kanban : To Do, In Progress, Done 컬럼이 같이 생성됩니다.
+
+   <img src="img/project/basic.png" width="400">
+
+3. Automated kanban : To Do, In Progress, Done 컬럼이 같이 생성됩니다. 
+
+   <img src="img/project/akanban.png" width="400">
+
+   
+
+4. Automated kanban with reviews : To Do, In Progress, Review In Progress, Reviewer Approved, Done 컬럼이 같이 생성됩니다.
+
+   <img src="img/project/review.png" width="400">
+
+5. Bug triage : Needs triage, High priority, Low priority, Close 컬럼이 같이 생성이 됩니다.
+
+   <img src="img/project/bug.png" width="400">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----
+
+## 참고
+
+- [Git reference](https://help.github.com/en/github/managing-your-work-on-github/managing-project-boards)
+- 오픈소스 라이브러리 [YPImagePicker](https://github.com/Yummypets/YPImagePicker/projects/2) 에서 사용하고 있는 프로젝트 사용 예시
 
