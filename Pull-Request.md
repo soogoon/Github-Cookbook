@@ -188,7 +188,7 @@ Checks 탭은 현재 레포지토리에 설정된 [Github Actions](https://help.
 
    ![review type](https://help.github.com/assets/images/help/pull_requests/pull-request-review-statuses.png)
 
-   - **Comment **: 명시적으로 변경을 승인하거나 추가 변경을 요청하지 않는 일반 피드백
+   - **Comment**: 명시적으로 변경을 승인하거나 추가 변경을 요청하지 않는 일반 피드백
    - **Approve** : 피드백을 제출하고 풀 리퀘스트의 제안된 변경사항을 병합하는 경우
 
    - **Request changes** : 병합되기 전에 반드시 개선되어야하는 변경 사항을 새롭게 요청하는 경우
@@ -293,3 +293,14 @@ Checks 탭은 현재 레포지토리에 설정된 [Github Actions](https://help.
 풀 리퀘스트의 맨 아래쪽의 `Revert` 를 클릭하면 된다.
 
 ![revert](https://help.github.com/assets/images/help/pull_requests/revert-pull-request-link.png)
+
+
+
+
+
+
+
+이승수형님 감사합니다.
+
+
+
