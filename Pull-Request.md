@@ -298,9 +298,3 @@ Checks 탭은 현재 레포지토리에 설정된 [Github Actions](https://help.
 
 
 
-
-
-이승수형님 감사합니다.
-
-
-
