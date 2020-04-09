@@ -198,4 +198,4 @@ GitHub Marketplace 에서 사용해본 앱 중 제일 괜찮았던 앱을 추천
 오픈소스를 개발하여 GitbHub 에 공여한 contributors 를 계속해서 Refresh 하여 찾아볼 수 있습니다.
 
 # Repository Setting 살펴보기
-앞의 내용과 구분하기 위해 따로 작성하여 업로드 하겠습니다. [다음 목차로 이동]()하고 싶다면
+앞의 내용과 구분하기 위해 따로 작성하여 업로드 하겠습니다. [다음 목차로 이동](Repository-Settings.md)하고 싶다면
