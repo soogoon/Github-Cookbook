@@ -37,7 +37,7 @@
 
 새로운 풀 리퀘스트 작성을 하거나 생성을 하고나서도 오른쪽 탭을 보면 여러가지 옵션이 있는데
 
-Reviewers, Assignees, Labels, Projects, Milestone, Linked Issues 등이 있다.
+Reviewers, Assignees, Labels, Projects, Milestone, Linked Issues 가 있다.
 
 #### Reviewers 
 
@@ -55,7 +55,7 @@ Assignee 는 담당자를 의미한다. 해당 작업을 담당하는 사람인�
 
 - 참고 : [Assigning issues and pull requests to other GitHub users](https://help.github.com/en/github/managing-your-work-on-github/assigning-issues-and-pull-requests-to-other-github-users)
 
-Assignee에 대해서는 꽤나 갑론을박이 있는 것 같다.(작성자 주관적 의견) 링크된 [stackoverflow 질문](https://stackoverflow.com/questions/41087206/on-github-whats-the-difference-between-reviewer-and-assignee)에서 확인해보자.
+> Assignee에 대해서는 꽤나 갑론을박이 있는 것 같다.(작성자 주관적 의견) 링크된 [stackoverflow 질문](https://stackoverflow.com/questions/41087206/on-github-whats-the-difference-between-reviewer-and-assignee)에서 확인해보자.
 
 #### Labels
 
@@ -75,6 +75,8 @@ Project에 대한 자세한 내용은 다음 챕터에서 확인해보자.
 
 - 참고 : [About project boards](https://help.github.com/en/github/managing-your-work-on-github/about-project-boards)
 
+---
+
 #### Milestone
 
 ![milestone](https://user-images.githubusercontent.com/19575791/78863303-360f7880-7a74-11ea-85ec-1ae0c8ab38b2.png)
@@ -83,21 +85,23 @@ Project에 대한 자세한 내용은 다음 챕터에서 확인해보자.
 
 - 참고 : [About milestones](https://help.github.com/en/github/managing-your-work-on-github/about-milestones)
 
+---
+
 #### Linked issues
 
 현재 오픈되어있는 이슈와 풀리퀘스트를 연동시키는 것이다. 해당 풀리퀘스트가 성공적으로 병합된다면 연동되어있는 이슈가 close된다. 자세한 내용은 다음 챕터에서 확인해보자.
 
 - 참고 : [Linking a pull request to an issue](https://help.github.com/en/enterprise/2.20/user/github/managing-your-work-on-github/linking-a-pull-request-to-an-issue)
 
-
+---
 
 위의 여러 옵션들을 설정하고 나면 커밋 메세지처럼 풀 리퀘스트의 제목과 간단한 본문을 작성할 수 있다.
 
-<img src="https://user-images.githubusercontent.com/19575791/78865057-e468ed00-7a77-11ea-94bd-bc633f529091.png" align=left>
+![title](https://user-images.githubusercontent.com/19575791/78865057-e468ed00-7a77-11ea-94bd-bc633f529091.png)
 
-제목은 풀 리퀘스트를 생성하려는 브랜치의 마지막 커밋메세지로 자동 생성된다. 원하는 제목으로 바꾸면 된다.
+제목은 풀 리퀘스트를 생성하려는 브랜치의 이름이나 마지막 커밋메세지로 자동 생성된다. 원하는 제목으로 바꾸면 된다.
 
-<img src="https://user-images.githubusercontent.com/19575791/78865277-40337600-7a78-11ea-9717-0a36bab3bc01.png" align=left>
+![create-pull-request](https://user-images.githubusercontent.com/19575791/78865277-40337600-7a78-11ea-9717-0a36bab3bc01.png)
 
 Create pull request 버튼의 화살표를 누르게 되면 두가지 옵션이 뜨는데 하나는 그대로 풀 리퀘스트를 생성하는 것이다.
 
@@ -105,23 +109,102 @@ Create draft pull request 는 풀 리퀘스트의 초안을 작성하는 것이�
 
 ---
 
+이제 풀 리퀘스트가 생성되었다.
 
+풀 리퀘스트를 생성하고 나면 총 4가지 탭이 있다.
+
+- Conversation
+- Commits
+- Checks
+- Files changed
+
+---
 
 #### Conversation
 
+![conversation](https://user-images.githubusercontent.com/19575791/78868487-fb124280-7a7d-11ea-8b78-b259a2af4829.png)
 
+풀 리퀘스트의 모든 작업들이 이 Conversation에 표기된다. 위에서 살펴본 Labels, Assignees, Projects, Milestone, Linked issues 를 설정한 경우, 새로운 커밋을 푸시한 경우, 새로운 코멘트를 작성한 경우, 풀 리퀘스트에서 가장 중요한 리뷰와 리뷰 코멘트 등 모든 내용이 시간 순서에 따라 나열된다.
 
 #### Commits
 
+![commits](https://user-images.githubusercontent.com/19575791/78868944-ba66f900-7a7e-11ea-86fa-fd1f5e46073f.png)
 
+해당 풀 리퀘스트에서 해당하는 브랜치의 모든 커밋이 표기되는 곳이다. 해당 커밋을 선택하여 그 커밋에서 어떠한 코드 수정이 있었는지 확인하고 코멘트할 수 있다.
 
 #### Checks
 
-
+Checks 탭은 현재 레포지토리에 설정된 [Github Actions](https://help.github.com/en/actions)으로 할 수 있는 작업 중 하나 같은데 여기서는 다루지 않겠다. (단호)
 
 #### Files Changed
 
+![files changed](https://user-images.githubusercontent.com/19575791/78869500-a66fc700-7a7f-11ea-8148-b3558bb681ee.png)
 
+현재 풀 리퀘스트의 모든 파일의 변경사항이 한번에 나열 되는 곳이다. 이곳에서 풀 리퀘스트의 꽃이라 할 수 있는 코드 리뷰를 진행할 수 있다.
 
+### 풀 리퀘스트에 대한 리뷰 요청하기
 
+풀 리퀘스트 생성이 끝났다면 특정 사용자(공동 작업자 또는 원본 소스코드 관리자)에게 변경 사항에 대해 리뷰를 요청할 수 있다.
+
+또한, 레포지토리의 소유자 또는 공동작업자는 읽기 권한을 부여받은 모든 사용자에게 풀 리퀘스트 리뷰를 할당할 수도 있다.
+
+- 참고 : [Requesting a pull request review](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/requesting-a-pull-request-review)
+
+리뷰가 이루어지는 과정은 아래에서 더 자세히 다루어 보자.
+
+---
+
+## 풀 리퀘스트 리뷰란?
+
+리뷰에서는 공동작업자가 풀 리퀘스트에서 제안된 변경사항에 대해 의견을 나누거나, 변경사항을 승인하거나, 풀 리퀘스트가 병합되기 전에 추가 작업을 요청할 수 있다.
+
+리뷰어는 한번에 한 파일씩 풀 리퀘스트의 변경 사항을 리뷰할 수 있다. 특정한 변경사항에 대해서 개인 코멘트를 남길 수도 있고, 파일은 리뷰하고 나서 확인했다고 표시할 수 있다. 아래 과정에서 어떻게 이루어지는지 살펴보자.
+
+#### 리뷰하기
+
+1. 풀 리퀘스트의 **Files changed** 탭으로 들어간다.
+
+   ![files changed tab](https://help.github.com/assets/images/help/pull_requests/pull-request-tabs-changed-files.png)
+
+2. 코멘트를 추가할 코드 줄 위에 마우스를 놓고 파란색 + 아이콘을 누르거나, 여러 줄에 대한 코멘트를 남기고 싶다면 해당 영역을 드래그하여 추가할 수 있다.
+	![add comment](https://help.github.com/assets/images/help/commits/hover-comment-icon.gif)
+	
+3. 코멘트를 추가한다.
+
+  ![add commect field](https://help.github.com/assets/images/help/pull_requests/comment-field.png)
+
+4. 만약 해당 라인의 코드를 제안하고 싶다면 `+` 버튼이나 아래 사진처럼 할 수 있다.
+
+   ![suggestion](https://help.github.com/assets/images/help/pull_requests/suggestion-block.png)
+
+5. 코멘트 작성을 완료하였다면, `Start a review`를 누른다.
+
+   ![start a review](https://help.github.com/assets/images/help/pull_requests/start-a-review-button.png)
+   
+6. 리뷰를 제출하기 전까지는 해당 코멘트는 해당 사용자에게만 표시된다. 리뷰를 제출하기 전까지는 언제든지 보류 중인 코멘트를 편집할 수 있다.
+
+#### 해당 파일을 확인했다는 `Viewed` 누르기
+
+파일 리뷰가 끝나고 파일을 본 것으로 표시하면 파일이 축소된다. 만약 해당 파일에 다시 변경 사항이 생긴다면 `Viewed`가 취소 된다.
+
+![viewed](https://help.github.com/assets/images/help/pull_requests/viewed-checkbox.png)
+
+#### 리뷰 제출하기
+
+모든 파일에 대해 리뷰가 끝났다면, 최종 리뷰를 제출하여야 한다.
+
+1. 모든 리뷰, 피드백에 대한 요약을 입력한다.
+
+   ![review changes](https://help.github.com/assets/images/help/pull_requests/review-summary-comment-window.png)
+
+2. 리뷰 결과는 총 세가지 타입이 존재한다.
+
+   ![review type](https://help.github.com/assets/images/help/pull_requests/pull-request-review-statuses.png)
+
+   - **Comment **: 명시적으로 변경을 승인하거나 추가 변경을 요청하지 않는 일반 피드백
+   - **Approve** : 피드백을 제출하고 풀 리퀘스트의 제안된 변경사항을 병합하는 경우
+
+   - **Request changes** : 병합되기 전에 반드시 개선되어야하는 변경 사항을 새롭게 요청하는 경우
+
+3. 리뷰를 제출한다.
 
