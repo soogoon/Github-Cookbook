@@ -41,7 +41,7 @@ Reviewers, Assignees, Labels, Projects, Milestone, Linked Issues 등이 있다.
 
 #### Reviewers 
 
-<img src="https://user-images.githubusercontent.com/19575791/78857621-d8bffb00-7a64-11ea-91af-c32b671eccba.png" width="300" align=left>
+![reviewers](https://user-images.githubusercontent.com/19575791/78857621-d8bffb00-7a64-11ea-91af-c32b671eccba.png)
 
 리뷰어는 말그대로 이 풀 리퀘스트의 리뷰를 요청받은 사람을 의미한다. Reviewers의 톱니바퀴를 눌러보면 현재 레포지토리의 소유자, 공동작업자 또는 팀의 인원이 목록에 나타나고 리뷰를 요청할 수 있다. 뒤에서 더 자세히 다뤄보자.
 
@@ -49,7 +49,7 @@ Reviewers, Assignees, Labels, Projects, Milestone, Linked Issues 등이 있다.
 
 #### Assignees
 
-<img src="https://user-images.githubusercontent.com/19575791/78859312-ed52c200-7a69-11ea-9d90-e037f02f7187.png" width="300" align=left>
+![assignee](https://user-images.githubusercontent.com/19575791/78859312-ed52c200-7a69-11ea-9d90-e037f02f7187.png)
 
 Assignee 는 담당자를 의미한다. 해당 작업을 담당하는 사람인데 이슈 또는 풀 리퀘스트에 누가 작업하고 있는지 명확하게 하는 역할이다.
 
@@ -59,7 +59,7 @@ Assignee에 대해서는 꽤나 갑론을박이 있는 것 같다.(작성자 주
 
 #### Labels
 
-<img src="https://user-images.githubusercontent.com/19575791/78862938-6c002d00-7a73-11ea-8bf9-a397232a29a3.png" width="300" align=left>
+![label](https://user-images.githubusercontent.com/19575791/78862938-6c002d00-7a73-11ea-8bf9-a397232a29a3.png)
 
 label을 선택하면 특정 풀 리퀘스트가 어떠한 작업인지 명시할 수 있다. 어떤 종류의 작업인지 필터링하게 되어 직관적으로 사용할 수 있다.
 
@@ -67,15 +67,21 @@ label을 선택하면 특정 풀 리퀘스트가 어떠한 작업인지 명시�
 
 #### Projects
 
-<img src="https://user-images.githubusercontent.com/19575791/78864690-1a59a180-7a77-11ea-84e9-e6a027cc54d2.png" width="300" align=left>
+![project](https://user-images.githubusercontent.com/19575791/78864690-1a59a180-7a77-11ea-84e9-e6a027cc54d2.png)
 
 레포지토리에 Project가 생성되어있다면 해당 풀 리퀘스트를 특정 Project에서의 작업이란 것을 명시할 수 있다.
 
+Project에 대한 자세한 내용은 다음 챕터에서 확인해보자.
+
+- 참고 : [About project boards](https://help.github.com/en/github/managing-your-work-on-github/about-project-boards)
+
 #### Milestone
 
-<img src="https://user-images.githubusercontent.com/19575791/78863303-360f7880-7a74-11ea-85ec-1ae0c8ab38b2.png" width="300" align=left>
+![milestone](https://user-images.githubusercontent.com/19575791/78863303-360f7880-7a74-11ea-85ec-1ae0c8ab38b2.png)
 
-마일스톤은 말 그대로 마일스톤이다 (...)
+마일스톤은 말 그대로 마일스톤이다(...). 마일스톤은 기한을 설정할 수 있고, 이슈와 풀 리퀘스트를 그룹화 할 수 있는데 마일스톤에 연동된 모든 이슈와 풀 리퀘스트가 성공적으로 마무리되면 마일스톤도 완료된다.
+
+- 참고 : [About milestones](https://help.github.com/en/github/managing-your-work-on-github/about-milestones)
 
 #### Linked issues
 
@@ -95,7 +101,11 @@ label을 선택하면 특정 풀 리퀘스트가 어떠한 작업인지 명시�
 
 Create pull request 버튼의 화살표를 누르게 되면 두가지 옵션이 뜨는데 하나는 그대로 풀 리퀘스트를 생성하는 것이다.
 
-Create draft pull request 
+Create draft pull request 는 풀 리퀘스트의 초안을 작성하는 것이다. (이것을 어떻게 활용하는지는 추후 추가할 예정)
+
+---
+
+
 
 #### Conversation
 
