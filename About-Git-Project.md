@@ -4,7 +4,7 @@ Github에서 제공하는 project탭에 대해 차근차근 알아보는 시간�
 
 처음 project 탭에 들어가게 되면 Project에 대한 설명이 간단하게 되어있는데요. 
 
-<img src="https://user-images.githubusercontent.com/22820675/79424029-83529380-7ffa-11ea-9972-7a1215da484a.png" width="600">
+<img src="https://user-images.githubusercontent.com/22820675/79424029-83529380-7ffa-11ea-9972-7a1215da484a.png" width="1000">
 
 1. 작업 정리 : 우리들의 Project Board에 issue와 pull request들을 더하고, 우선 순위대로 노트카드 안에 idea와 업무 리스트를 정리 합니다.
 2. 프로젝트 계획 : "To Do" , "In Progress", "Done"와 같은 기준을 정해 작업을 상태를 정렬합니다. 
@@ -25,19 +25,19 @@ Github에서 제공하는 project탭에 대해 차근차근 알아보는 시간�
 
 1. User
 
-    <img src="https://user-images.githubusercontent.com/22820675/79424027-82b9fd00-7ffa-11ea-9ebe-c6e7921567c8.png" width="600">
+    <img src="https://user-images.githubusercontent.com/22820675/79424027-82b9fd00-7ffa-11ea-9ebe-c6e7921567c8.png" width="1000">
 
    사용자의 repo를 이용해 프로젝트를 생성할 수 있습니다.
 
 2. organization
 
-    <img src="https://user-images.githubusercontent.com/22820675/79424023-8188d000-7ffa-11ea-8cc6-a36fa2bc2784.png" width="600">
+    <img src="https://user-images.githubusercontent.com/22820675/79424023-8188d000-7ffa-11ea-8cc6-a36fa2bc2784.png" width="1000">
 
    해당 조직에 속한 repo만을 이용해 프로젝트를 생성할 수 있습니다.
 
 3. repo
 
-    <img src="https://user-images.githubusercontent.com/22820675/79424024-82216680-7ffa-11ea-9089-582bd453be87.png" width="600">
+    <img src="https://user-images.githubusercontent.com/22820675/79424024-82216680-7ffa-11ea-9089-582bd453be87.png" width="1000">
 
    repo하나로 범위가 한정되고 단일 repo에 속한 요청만을 끌어옵니다.
 
@@ -55,27 +55,27 @@ Github에서 제공하는 project탭에 대해 차근차근 알아보는 시간�
 
 1. None : 말 그대로 프로젝트만 생성이 됩니다
 
-   <img src="https://user-images.githubusercontent.com/22820675/79424016-8057a300-7ffa-11ea-926e-0ffe7b28d745.png" width="600">
+   <img src="https://user-images.githubusercontent.com/22820675/79424016-8057a300-7ffa-11ea-926e-0ffe7b28d745.png" width="1000">
 
    
 
 2. Basic kanban : To Do, In Progress, Done 컬럼이 같이 생성됩니다.
 
-   <img src="https://user-images.githubusercontent.com/22820675/79424003-7d5cb280-7ffa-11ea-8679-269cdecaa2ec.png" width="600">
+   <img src="https://user-images.githubusercontent.com/22820675/79424003-7d5cb280-7ffa-11ea-8679-269cdecaa2ec.png" width="1000">
 
 3. Automated kanban : To Do, In Progress, Done 컬럼이 같이 생성됩니다. 
 
-   <img src="https://user-images.githubusercontent.com/22820675/79423998-7c2b8580-7ffa-11ea-98b5-9b89ee143539.png" width="600">
+   <img src="https://user-images.githubusercontent.com/22820675/79423998-7c2b8580-7ffa-11ea-98b5-9b89ee143539.png" width="1000">
 
    
 
 4. Automated kanban with reviews : To Do, In Progress, Review In Progress, Reviewer Approved, Done 컬럼이 같이 생성됩니다.
 
-   <img src="https://user-images.githubusercontent.com/22820675/79424032-83529380-7ffa-11ea-9fa6-fbd856de8c6d.png" width="600">
+   <img src="https://user-images.githubusercontent.com/22820675/79424032-83529380-7ffa-11ea-9fa6-fbd856de8c6d.png" width="1000">
 
 5. Bug triage : Needs triage, High priority, Low priority, Close 컬럼이 같이 생성이 됩니다.
 
-   <img src="https://user-images.githubusercontent.com/22820675/79424005-7df54900-7ffa-11ea-877c-17d4b2d277dd.png" width="600">
+   <img src="https://user-images.githubusercontent.com/22820675/79424005-7df54900-7ffa-11ea-877c-17d4b2d277dd.png" width="1000">
 
 기본적인 kanban에 대한 기본적인 구성은 비슷하고 자동화가 적용이 되어 있나, 리뷰를 진행하는 프로젝트의 progress에서 포함이 되어있는지에 대한 차이점이 있을 뿐입니다.  
 
