@@ -111,7 +111,7 @@ Github에서 제공하는 project탭에 대해 차근차근 알아보는 시간�
 
 물론 이름을 해당하는 프리셋에 맞춰서 설정할 필요는 없고, 프리셋 하나만 할당 한 뒤에 원하는 자동화 옵션을 선택해주시면 됩니다.
 
-<img src="![img](https://user-images.githubusercontent.com/22820675/79424033-83eb2a00-7ffa-11ea-8dab-1ba42c9af257.png)" width="500">
+<img src="https://user-images.githubusercontent.com/22820675/79424033-83eb2a00-7ffa-11ea-8dab-1ba42c9af257.png" width="500">
 
 To do
 
