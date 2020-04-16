@@ -30,8 +30,8 @@
 > | ------- | ----------------------- | -------------- |
 > | 1       |       [Git Workflow](Git-Github-Collaborating.md)       | [soogoon](https://github.com/soogoon) |
 > | 2       | [Github Marketplace, Explore](Github-Marketplace-Explore.md) / [Repository Settings](Repository-Settings.md)  |   [ttub-nii](https://github.com/ttub-nii)  |
-> | 3       | [Pull request](Pull-Request.md) | [soogoon](https://github.com/soogoon) |
-> | 4       | [Github Project]() | [5anniversary](https://github.com/5anniversary) |
+> | 3       | [Pull & Request](Pull-Request.md) | [soogoon](https://github.com/soogoon) |
+> | 4       | [Github Project](About-Git-Project.md) | [5anniversary](https://github.com/5anniversary) |
 > | 5       | [Issue Tracking]() | [khyunjiee](https://github.com/khyunjiee) |
 > | 6       | [Github blog with Github page]() | [jihye0420](https://github.com/jihye0420) |
 
