@@ -1,4 +1,4 @@
-# Issue Traking
+# Issue Tracking
 
 ### Issue가 무엇인가요?
 
