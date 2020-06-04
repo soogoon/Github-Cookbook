@@ -54,7 +54,7 @@
 
        우측의 Rename버튼 누르기
 
-       ![image-20200604173928415](https://user-images.githubusercontent.com/19575791/83744101-95fe5600-a696-11ea-918e-ffd432498ce5.png)
+       ![image-20200604173928415](https://user-images.githubusercontent.com/19575791/83744444-1a50d900-a697-11ea-8636-f79387da3714.png)
 
        5) Settings를 눌러서 나온 화면에서 스크롤을 내리면 GitHub Pages에서 초록색으로 경로가 나올 경우 블로그 개설이 완료됬다는 증거!
 
