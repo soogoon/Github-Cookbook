@@ -33,7 +33,7 @@
 > | 3       | [Pull & Request](Pull-Request.md) | [soogoon](https://github.com/soogoon) |
 > | 4       | [Github Project](About-Git-Project.md) | [5anniversary](https://github.com/5anniversary) |
 > | 5       | [Github issue](Github-Issue.md) | [khyunjiee](https://github.com/khyunjiee) |
-> | 6       | [Github blog with Github page]() | [jihye0420](https://github.com/jihye0420) |
+> | 6       | [Github blog with Github page](Github-blog-posting.md) | [jihye0420](https://github.com/jihye0420) |
 
 ## Contributers
 
