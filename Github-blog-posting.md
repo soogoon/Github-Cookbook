@@ -8,7 +8,7 @@
   - 정적인 페이지(ex) 포트폴리오 사이트, 기술 정보를 정리하는 블로그 등)를 제공할 때 사용하기 좋음!
   - .github.io 라는 이름이 붙음 -> 국내의 한 기업에서 GitHub Pages를 통해 운영하는 기술 블로그
   - 반응형 웹 디자인을 만드는 Bootstrap 오픈 소스의 사이트 (https://getbootstrap.com/) -> GitHub Pages를 사요해 만든 홈페이지
-  - ![image-20200604162835232](C:\Users\gh060\AppData\Roaming\Typora\typora-user-images\image-20200604162835232.png)
+  - ![image-20200604162835232](https://user-images.githubusercontent.com/19575791/83743888-50da2400-a696-11ea-8066-48015cabd519.png)
 
 * GitHub Pages를 사용하는 2가지 방법
 
@@ -36,15 +36,15 @@
 
        1) http://jekyllthemes.org/ 에 들어가기 또는 깃허브에 직접 jekyll을 검색해서 사용해도 됨!
 
-       ![image-20200604171142222](C:\Users\gh060\AppData\Roaming\Typora\typora-user-images\image-20200604171142222.png)
+       ![image-20200604171142222](https://user-images.githubusercontent.com/19575791/83743986-6e0ef280-a696-11ea-834d-fad16af2913f.png)
 
        2) 원하는 테마 고르기-> Homepage 버튼 누르기
 
-       ![image-20200604171442912](C:\Users\gh060\AppData\Roaming\Typora\typora-user-images\image-20200604171442912.png)
+       ![image-20200604171442912](https://user-images.githubusercontent.com/19575791/83744030-7d8e3b80-a696-11ea-833d-49234c7bb147.png)
 
-       3) Fork버튼을 누르고 추가하고 싶은 자신의 저장소로 포크![image-20200604171856927](C:\Users\gh060\AppData\Roaming\Typora\typora-user-images\image-20200604171856927.png)
+       3) Fork버튼을 누르고 추가하고 싶은 자신의 저장소로 포크![image-20200604171856927](https://user-images.githubusercontent.com/19575791/83744073-8aab2a80-a696-11ea-83a7-5cda1ba7759c.png)
 
-       ![image-20200604172217750](C:\Users\gh060\AppData\Roaming\Typora\typora-user-images\image-20200604172217750.png)
+       ![image-20200604172217750](https://user-images.githubusercontent.com/19575791/83744101-95fe5600-a696-11ea-918e-ffd432498ce5.png)
 
        4) Settings에 들어가서 다음과 같이 변경 ->
 
@@ -54,7 +54,7 @@
 
        우측의 Rename버튼 누르기
 
-       ![image-20200604173928415](C:\Users\gh060\AppData\Roaming\Typora\typora-user-images\image-20200604173928415.png)
+       ![image-20200604173928415](https://user-images.githubusercontent.com/19575791/83744101-95fe5600-a696-11ea-918e-ffd432498ce5.png)
 
        5) Settings를 눌러서 나온 화면에서 스크롤을 내리면 GitHub Pages에서 초록색으로 경로가 나올 경우 블로그 개설이 완료됬다는 증거!
 
@@ -102,20 +102,6 @@
           ```
 
           
-
-       4. 
-
-       5. 
-
-       6. 
-
-       (**목적: 
-
-     1. 온라인 이력서 등을 올리는 경우 -> 블로그 전체를 살펴볼 수 있는 디자인 & 잦은 수정은 고려x
-
-     2. 포털사이트 블로그처럼 게시물을 자주 작성할 수 있는 경우 -> 수정o & 최근 게시물이 앞에 보이도록 하기
-
-        **)
 
         * 블로그에 포스트 작성하기
 
